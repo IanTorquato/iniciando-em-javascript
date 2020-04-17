@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Exemplo 06 JavaScript</title>
+	
+	<style>
+		body {
+			margin-left: 40%;
+			background-color: #eeeeee;
+		}
+		
+		div#di1 {
+			font: normal 15pt verdana;
+			background: black;
+			width: 250px;
+			height: 250px;
+			color: white;
+			text-align: center;
+			line-height: 250px;
+			margin-top: 20%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="di1">
+		Interaja...
+	</div>
+	
+	<script>
+		var d1 = window.document.getElementById('di1')
+		
+		d1.addEventListener('click', clicou)
+		d1.addEventListener('mouseover', entrou)
+		d1.addEventListener('mouseout', saiu)
+		
+		function clicou()
+		{
+			d1.innerText = 'Clicou!!'
+			d1.style.background = '#ff2020'
+		}
+		
+		function entrou()
+		{
+			d1.innerText = 'Entrou!!'
+		}
+		
+		function saiu()
+		{
+			d1.innerText = 'Saiu!!'
+			d1.style.background = 'black'
+		}
+	</script>
+</body>
+
+</html>

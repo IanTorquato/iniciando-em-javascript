@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Teste 04 JavaScript</title>
+	
+	<style>
+		body {
+			background-color: rgb(88, 88, 88);
+			font: normal 18pt verdana;
+			color: rgba(255, 255, 255, 0.836);
+			text-shadow: 0px 0px 15px rgb(0, 0, 0);
+		}
+		
+		div#movimentar {
+			background-color: black;
+			width: 80px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Testando Números Aleatórios</h1>
+	<div id="movimentar">Teste</div>
+	
+	<script>
+		var d1 = window.document.getElementById('movimentar')
+		
+		d1.addEventListener('mousemove', trocar)
+		
+		function trocar()
+		{
+			d1.style.marginLeft = Math.floor(Math.random() * 1270 + 1) + 'px'
+			d1.style.marginTop = Math.floor(Math.random() * 480 + 1) + 'px'
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+function fatorial(num = 0)
+{
+	if (num == 1)
+	{
+		return 1
+	}
+	else
+	{
+		return num * fatorial(num - 1)
+	}
+}
+
+console.log(fatorial(5))

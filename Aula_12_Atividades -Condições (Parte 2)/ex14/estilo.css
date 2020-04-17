@@ -1,0 +1,33 @@
+body {
+	font: normal 16pt verdana;
+}
+
+header {
+	color: white;
+	text-align: center;
+}
+
+section {
+	background-color: white;
+	border-radius: 10px;
+	padding: 7px;
+	width: 500px;
+	margin: auto;
+	box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.767);
+}
+
+div {
+	text-align: center;
+	padding: 8px;
+}
+
+div#horario {
+	text-align: right;
+	padding: 2px;
+}
+
+footer {
+	color: white;
+	text-align: center;
+	font-style: italic;
+}

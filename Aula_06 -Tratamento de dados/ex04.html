@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Exemplo 04 JavaScript</title>
+</head>
+
+<body>
+	<script>
+		var nome = window.prompt('Digite seu nome: ')
+		
+		document.write(`Seu nome é <strong>${nome}</strong>.</br>`)
+		document.write(`Ele tem ${nome.replace(' ','').length} letras.</br>`) //retira espaços
+		document.write(`Escrito em MAIÚSCULAS ele fica: <strong>${nome.toUpperCase()}</strong>!</br>`)
+		document.write(`E em minúsculas: <strong>${nome.toLowerCase()}</strong>!</br>`)
+		
+		// Mantem espaços
+		document.write(`</br>A quantidade de letras do seu nome transformada em Real 
+            	é: R$${nome.length.toFixed(2).replace('.', ',')}`)
+		document.write(`</br>A quantidade de letras do seu nome transformada em Dólar 
+            	é: ${nome.length.toLocaleString('pt-BR', { style: 'currency', currency: 'USD' })}`)
+		document.write(`</br>A quantidade de letras do seu nome transformada em Euro 
+            	é: ${nome.length.toLocaleString('pt-BR', { style: 'currency', currency: 'EUR' })}`)
+	</script>
+</body>
+
+</html>

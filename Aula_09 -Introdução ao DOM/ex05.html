@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Exemplo 05 JavaScript</title>
+	
+	<style>
+		body {
+			background-color: rgb(100, 100, 100);
+			color: white;
+			font: normal 12pt verdana;
+		}
+		
+		h2,
+		p,
+		div {
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<h2 id="h02">Primeiro Contato com o DOM</h2>
+	<p name="p1">Aqui vai o resultado.</p>
+	<p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+	<div id="msn">Clique em mim!</div></br>
+	
+	<script>
+		var p2 = window.document.getElementsByTagName('p')[1]
+		
+		window.document.write(p2.innerText + '</br>') // Sem formatação
+		window.document.write(p2.innerHTML) // Com formatação
+		p2.style.color = '#000000'
+		
+		var d1 = window.document.getElementById('msn')
+		window.document.write('</br></br>' + d1.innerText)
+		d1.style.backgroundColor = '#564050'
+		d1.style.color = '#aa66aa'
+		
+		var p1 = window.document.getElementsByName('p1')[0]
+		window.document.write('</br></br><strong>' + p1.innerText + '</strong>')
+		
+		var h02 = window.document.querySelector('h2#h02')
+		window.document.write('</br></br>' + h02.innerText)
+		h02.style.backgroundColor = 'rgb(30, 80, 200)'
+	</script>
+</body>
+
+</html>

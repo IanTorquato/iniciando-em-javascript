@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Exemplo 07 JavaScript</title>
+	
+	<style>
+		body {
+			font: normal 16pt verdana;
+			background-color: #dddddd;
+		}
+		
+		input {
+			font: normal 16pt verdana;
+			width: 150px;
+		}
+		
+		div#res {
+			background: #cccccc;
+			width: 400px;
+			margin-top: 30px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Somando Valores</h1>
+	<input type="number" name="n1" id="n1"> +
+	<input type="number" name="n2" id="n2">
+	<input type="button" value="somar" onclick="clicou()">
+	<div id="res"></div>
+	
+	<script>
+		function clicou()
+		{
+			var text1 = window.document.getElementById('n1')
+			var text2 = window.document.querySelector('input#n2')
+			
+			var num1 = Number(text1.value)
+			var num2 = Number(text2.value)
+			
+			var res1 = window.document.getElementById('res')
+			var som = num1 + num2
+			
+			res1.style.padding = '10px'
+			res1.innerHTML = `A soma entre ${num1} e ${num2} é <strong>${som}</strong>!`
+		}
+	</script>
+</body>
+
+</html>

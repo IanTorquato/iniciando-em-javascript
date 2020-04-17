@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exemplo 10 JavaScript</title>
+	
+	<style>
+		body {
+			font-size: 16pt;
+			background-color: #eeeeee;
+		}
+	</style>
+</head>
+
+<body>
+	Digite uma velocidade: <input type="number" name="txtVel" id="txtVel"> km/h
+	<input type="button" value="Verificar" onclick="verifica()">
+	<div id="resp"></div>
+	
+	<script>
+		function verifica()
+		{
+			let txtvelo = window.document.querySelector('input#txtVel')
+			let resposta = window.document.querySelector('div#resp')
+			let velocidade = Number(txtvelo.value)
+			
+			resposta.innerHTML = `<p>Velocidade igual à: <strong>${velocidade}km/h</strong></p>`
+			
+			if (velocidade > 80)
+			{
+				resposta.innerHTML += `<p>Você foi <strong>multado</strong> por ultrapassar o limite de velocidade!</p>`
+			}
+			
+			resposta.innerHTML += `<p>Dirija sempre com cinto!</p>`
+		}
+	</script>
+</body>
+
+</html>

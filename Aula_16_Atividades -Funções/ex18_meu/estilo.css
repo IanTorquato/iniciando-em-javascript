@@ -1,0 +1,24 @@
+body {
+	background-color: rgb(4, 49, 197);
+	font: normal 15pt arial;
+	text-align: center;
+}
+
+h1 {
+	font: bold 23pt verdana;
+}
+
+section {
+	background-color: white;
+	border-radius: 15px;
+	padding: 6px;
+	margin: auto;
+	width: 610px;
+	box-shadow: 8px 8px 35px black;
+	text-align: left;
+}
+
+footer {
+	margin-top: 30px;
+	font-style: italic;
+}
