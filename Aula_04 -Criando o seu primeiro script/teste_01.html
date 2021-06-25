@@ -2,51 +2,46 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Meu Primeiro Teste</title>
-	
-	<style>
-		body {
-			background-color: rgb(207, 207, 207);
-			font: normal 13pt arial;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meu Primeiro Teste</title>
+
+  <style>
+    body {
+      background-color: rgb(207, 207, 207);
+      font: normal 13pt arial;
+    }
+  </style>
 </head>
 
 <body>
-	<h1>Relembrando Conceitos da aula 04</h1>
-	<h2>Juntamente com conceitos de Lógica de Programação!</h2>
-	
-	<script>
-		// Pop-up com botão OK
-		window.alert('Teste de Alerta!')
-		
-		// Pop-up com os botões OK e Cancelar
-		if (window.confirm('Você deseja testar a escrita?') == true)
-		{
-			// Pop-up que permite a escrita
-			escrita = window.prompt('Teste de escrita...')
-			
-			if (escrita == '')
-			{
-				window.alert('Você não escreveu nada!')
-			}
-			else if (escrita == null)
-			{
-				window.alert('Você clicou em Cancelar!')
-			}
-			else
-			{
-				window.alert('Você escreveu: ' + escrita)
-			}
-		}
-		else
-		{
-			window.alert('Por mim tudo bem :p')
-		}
-	</script>
+  <h1>Relembrando Conceitos da aula 04</h1>
+  <h2>Juntamente com conceitos de Lógica de Programação!</h2>
+
+  <script>
+    // Pop-up com botão OK
+    window.alert('Teste de Alerta!')
+
+    // Pop-up com os botões OK e Cancelar
+    if (window.confirm('Você deseja testar a escrita?') == true) {
+      // Pop-up que permite a escrita
+      escrita = window.prompt('Teste de escrita...')
+
+      if (escrita == '') {
+        window.alert('Você não escreveu nada!')
+      }
+      else if (escrita == null) {
+        window.alert('Você clicou em Cancelar!')
+      }
+      else {
+        window.alert('Você escreveu: ' + escrita)
+      }
+    }
+    else {
+      window.alert('Por mim tudo bem :p')
+    }
+  </script>
 </body>
 
 </html>

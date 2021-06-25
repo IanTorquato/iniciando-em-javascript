@@ -2,68 +2,62 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Teste 03 JavaScript</title>
-	
-	<style>
-		body {
-			font: normal 14pt verdana;
-			background: rgb(114, 199, 199);
-		}
-		
-		div#movimentar {
-			margin-top: 30px;
-			background: rgb(109, 200, 223);
-			font: normal 16pt arial;
-			width: 165px;
-			height: 40px;
-			text-align: center;
-			line-height: 40px;
-			padding: 2px;
-			box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teste 03 JavaScript</title>
+
+  <style>
+    body {
+      font: normal 14pt verdana;
+      background: rgb(114, 199, 199);
+    }
+
+    div#movimentar {
+      margin-top: 30px;
+      background: rgb(109, 200, 223);
+      font: normal 16pt arial;
+      width: 165px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      padding: 2px;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+    }
+  </style>
 </head>
 
 <body>
-	<h1>Testando Conhecimentos da Aula 10</h1>
-	<div id="movimentar"><strong>TENTE CLICAR!</strong></div>
-	
-	<script>
-		var andar = window.document.getElementById('movimentar')
-		andar.addEventListener('mousemove', move)
-		andar.addEventListener('mousedown', clicou)
-		
-		function move()
-		{
-			var largura = Number(andar.style.marginLeft.replace('px', ''))
-			
-			if (largura < '1100')
-			{
-				andar.style.marginLeft = largura + 80 + 'px'
-			}
-			else
-			{
-				andar.style.marginLeft = '0px'
-			}
-		}
-		
-		function clicou()
-		{
-			var altura = Number(andar.style.marginTop.replace('px', ''))
-			
-			if (altura < 500)
-			{
-				andar.style.marginTop = altura + 100 + 'px'
-			}
-			else
-			{
-				andar.style.marginTop = '0px'
-			}
-		}
-	</script>
+  <h1>Testando Conhecimentos da Aula 10</h1>
+  <div id="movimentar"><strong>TENTE CLICAR!</strong></div>
+
+  <script>
+    var andar = window.document.getElementById('movimentar')
+    andar.addEventListener('mousemove', move)
+    andar.addEventListener('mousedown', clicou)
+
+    function move() {
+      var largura = Number(andar.style.marginLeft.replace('px', ''))
+
+      if (largura < '1100') {
+        andar.style.marginLeft = largura + 80 + 'px'
+      }
+      else {
+        andar.style.marginLeft = '0px'
+      }
+    }
+
+    function clicou() {
+      var altura = Number(andar.style.marginTop.replace('px', ''))
+
+      if (altura < 500) {
+        andar.style.marginTop = altura + 100 + 'px'
+      }
+      else {
+        andar.style.marginTop = '0px'
+      }
+    }
+  </script>
 </body>
 
 </html>

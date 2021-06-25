@@ -1,28 +1,28 @@
 body {
-	background-color: rgb(21, 21, 216);
-	font: normal 14pt verdana;
+  background-color: rgb(21, 21, 216);
+  font: normal 14pt verdana;
 }
 
 header {
-	color: white;
-	text-align: center;
+  color: white;
+  text-align: center;
 }
 
 section {
-	background-color: white;
-	width: 700px;
-	padding: 10px;
-	border-radius: 15px;
-	margin: auto;
-	box-shadow: 12px 12px 25px black;
+  background-color: white;
+  width: 700px;
+  padding: 10px;
+  border-radius: 15px;
+  margin: auto;
+  box-shadow: 12px 12px 25px black;
 }
 
 select#selecao {
-	width: 140px;
+  width: 140px;
 }
 
 footer {
-	font-style: italic;
-	color: white;
-	text-align: center;
+  font-style: italic;
+  color: white;
+  text-align: center;
 }

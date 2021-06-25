@@ -2,47 +2,41 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Teste 02 JavaScript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teste 02 JavaScript</title>
 </head>
 
 <body>
-	<script>
-		if (window.confirm('Deseja testar meu sistema?') == true)
-		{
-			var nomeReal = (window.prompt('Digite seu primeiro nome:')).trim()
-			var nomeDesejado = (window.prompt('Digite o primeiro nome de outra pessoa:')).trim()
-			
-			var quantReal = nomeReal.length
-			var quantDesejado = nomeDesejado.length
-			
-			document.write(`Os dois nomes em letras MAIÚSCULAS ficam: " ${nomeReal.toUpperCase()} " e " ${nomeDesejado.toUpperCase()} "!,</br>`)
-			
-			document.write(`Já em letras minúsculas ficam: " ${nomeReal.toLowerCase()} " e " ${nomeDesejado.toLowerCase()} "!</br></br>`)
-			
-			if (quantReal == quantDesejado)
-			{
-				document.write(`Os nomes ${nomeReal} e ${nomeDesejado}, têm o mesmo tamanho!`)
-			}
-			else
-			{
-				if (quantReal > quantDesejado)
-				{
-					document.write(`O maior nome é ${nomeReal}! </br> Ele tem ${quantReal} letras e tem ${quantReal-quantDesejado} letras a mais que "${nomeDesejado}".</br></br> Além disso, o nome ${nomeDesejado} representa <strong>${(quantDesejado/quantReal*100).toFixed(2)}%</strong> de "${nomeReal}"!`)
-				}
-				else
-				{
-					document.write(`O maior nome é ${nomeDesejado}! </br> Ele tem ${quantDesejado} letras e tem ${quantDesejado - quantReal} letras a mais que "${nomeReal}".</br></br> Além disso, o nome ${nomeReal} representa <strong>${(quantReal/quantDesejado*100).toFixed(2)}%</strong> de "${nomeDesejado}"!`)
-				}
-			}
-		}
-		else
-		{
-			document.write('Você não sabe o que está perdendo! :p')
-		}
-	</script>
+  <script>
+    if (window.confirm('Deseja testar meu sistema?') == true) {
+      var nomeReal = (window.prompt('Digite seu primeiro nome:')).trim()
+      var nomeDesejado = (window.prompt('Digite o primeiro nome de outra pessoa:')).trim()
+
+      var quantReal = nomeReal.length
+      var quantDesejado = nomeDesejado.length
+
+      document.write(`Os dois nomes em letras MAIÚSCULAS ficam: " ${nomeReal.toUpperCase()} " e " ${nomeDesejado.toUpperCase()} "!,</br>`)
+
+      document.write(`Já em letras minúsculas ficam: " ${nomeReal.toLowerCase()} " e " ${nomeDesejado.toLowerCase()} "!</br></br>`)
+
+      if (quantReal == quantDesejado) {
+        document.write(`Os nomes ${nomeReal} e ${nomeDesejado}, têm o mesmo tamanho!`)
+      }
+      else {
+        if (quantReal > quantDesejado) {
+          document.write(`O maior nome é ${nomeReal}! </br> Ele tem ${quantReal} letras e tem ${quantReal - quantDesejado} letras a mais que "${nomeDesejado}".</br></br> Além disso, o nome ${nomeDesejado} representa <strong>${(quantDesejado / quantReal * 100).toFixed(2)}%</strong> de "${nomeReal}"!`)
+        }
+        else {
+          document.write(`O maior nome é ${nomeDesejado}! </br> Ele tem ${quantDesejado} letras e tem ${quantDesejado - quantReal} letras a mais que "${nomeReal}".</br></br> Além disso, o nome ${nomeReal} representa <strong>${(quantReal / quantDesejado * 100).toFixed(2)}%</strong> de "${nomeDesejado}"!`)
+        }
+      }
+    }
+    else {
+      document.write('Você não sabe o que está perdendo! :p')
+    }
+  </script>
 </body>
 
 </html>
